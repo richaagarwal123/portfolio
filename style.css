@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: yellow;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: -470px;
+  display: flex;
+  justify-content: center;
+  animation: slideRight 1s ease forwards;
+  opacity: 0;
+}
+
+.navbar #con-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  padding: 0px 120px;
+  flex: 0;
+  list-style: none;
+}
+
+
+
+
+.navbar #con-menu .item {
+  line-height: 40px;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  transition: .3s;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+
+}
+
+.navbar #con-menu li::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: transparent;
+  transition: all 0.5s ease;
+
+}
+
+.navbar #con-menu .item:hover::after {
+  width: 100%;
+  background-color: yellow;
+}
+
+.navbar #con-menu li .item {
+  list-style: none;
+  color: yellow;
+  text-decoration: none;
+}
+
+
+.wrapper {
+  background-color: black;
+}
+
+#close {
+  display: none;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+.Home {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: black;
+  opacity: 0.8;
+}
+
+.Home .con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.Home .con h1 {
+  color: aliceblue;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.Home .con .diff {
+  color: yellow;
+}
+
+.Home .con p {
+  width: 400px;
+  margin-left: 70px;
+  color: aliceblue;
+  opacity: 0.6;
+
+}
+
+.home-img img {
+  border-radius: 60%;
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+  box-shadow: 1px 1px 30px yellow;
+}
+
+.head {
+  color: yellow;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2.5s ease forwards;
+
+}
+
+.learn {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 14px;
+
+  border-radius: 6px;
+  color: yellow;
+  border: 1px solid;
+  margin-right: 220px;
+}
+
+
+#bar {
+  background-color: aliceblue;
+
+}
+
+
+
+
+@keyframes typing {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-0px);
+    opacity: 1;
+  }
+
+}
+@media(max-width:768px){
+  .home{
+  height: 150vh;
+}
+.navbar .logo{
+  margin-left: 100px;
+}
+.about .about-con{
+  margin-left: 100px;
+
+}
+.portfolio{
+
+  height: 145vh;
+}
+.services{
+  height: 130vh;
+}
+.service-list div{
+  left: 2%;
+}
+.skills{
+  height: 150vh;
+}
+#cont{
+
+  margin-right: 130px;
+  
+}
+.skills-con .container1 .head{
+  left:0;
+ 
+    margin-top: 220px;
+    margin-bottom: 89px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+ .skills-con .container1 .soft {
+  position: relative;
+  top: 320px;
+  left: -120px;;
+  
+}
+.soft .bar .progress-line{
+  left:200px;
+}
+
+
+}
+
+@media (max-width: 420px) {
+  .navbar .logo{
+    margin-left: -250px;
+  }
+
+
+
+.navbar #con-menu {
+  color: #000;
+  position: absolute;
+  top: 4rem;
+  right: .5rem;
+  width: 10%;
+
+  background-color: #000;
+  flex-direction: column;
+  font-weight: 500;
+  padding: 2rem 3rem;
+  gap: .2rem;
+  border-radius: 10px;
+  align-items: flex-start;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  z-index: 99;
+
+
+
+
+
+}
+
+
+
+
+
+
+#con-menu li a {
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+
+
+
+}
+
+#mobile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  left: 250px;
+  background-color: aliceblue;
+  padding: 0px 3px;
+  font-size: 20px;
+  border-radius: 3px;
+ 
+
+
+}
+.home{
+  height: 110vh;
+}
+.home-img img{
+  margin-left: 8px;
+}
+.about{
+  height: 160vh;
+}
+.about .about-con{
+  width: 100vh;
+}
+.portfolio{
+  height: 210vh;
+}
+.portfolio h1{
+  display: none;
+}
+.row{
+  width: 240px;
+  margin-left: 90px;
+}
+.services {
+  height: 190vh;
+}
+.service-list div{
+  left: -4%;
+}
+.skills{
+  height: 140vh;
+}
+#cont{
+
+  margin-right: 130px;
+  
+}
+.skills-con .container1 .head{
+  left:0;
+ 
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+ .skills-con .container1 .soft {
+  position: relative;
+  top: 0;
+  left: 10px;;
+  
+}
+ .skills-con .container1 .technical{
+position: relative;
+top: 0px;
+left: 30px;
+ }
+.soft .bar .progress-line{
+  left:260px;
+}
+.about .about-con{
+  width: 60%;
+}
+.about .about-con .aboutc {
+    width: 110%;
+    margin-left: -70px;
+
+}
+.about .about-con .aboutc h3{
+  width: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+}
