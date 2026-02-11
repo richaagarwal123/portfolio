@@ -395,13 +395,45 @@ left: 30px;
   width: 150%;
 }
 
+}
+@media(max-width:360px){
+ .navbar .logo {
+    margin-left: -228px;
+  }
+  #mobile{
+    left:223px;
+  }
+  .about .about-con .aboutc {
+    width: auto;
+    margin-left: -115px;
+}
+.row {
+  
+    margin-left: 63px;
 
-
-
-
-
-
-
+}
+.soft .bar .progress-line{
+  left:200px;
+}
+.technical .bar .progress-line{
+  left:118px;
+}
+.contact{
+  height: 120vh;
+}
+.service-list div {
+    left: -24%;
+  }
+  .Home .con p {
+  width: 320px;
+  margin-left: -16px;
+  
+}
 
 
 }
+
+
+
+
+
