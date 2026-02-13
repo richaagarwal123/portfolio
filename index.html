@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -16,19 +17,20 @@
 
       <div>
         <ul id='con-menu'>
-          <li><a href="#" class="item">Home</a></li>
+          <li><a href="#" class="item" id="close" onclick="close()"><i class="bx bx-x"></i></a></li>
+          <li><a href="active" class="item">Home</a></li>
           <li><a href="About.html" class="item">About</a></li>
           <li> <a href="Portfolio.html" class="item">Portfolio</a></li>
           <li><a href="skills.html" class="item">Skills</a> </li>
           <li><a href="services.html" class="item">Services</a></li>
           <li><a href="Contact.html" class="item">Contact</a></li>
-          
+
 
         </ul>
       </div>
       <div id="mobile" onclick="toggleMenu()">
 
-        <img src="more.png" id="bar"  width="15px">
+        <img src="more.png" id="bar" width="15px">
 
       </div>
 
@@ -59,7 +61,9 @@
 
   </div>
 
-<script src="script.js"></script>
+   
+
+  <script src="script.js"></script>
 </body>
 
 </html>
